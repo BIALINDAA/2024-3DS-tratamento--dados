@@ -55,6 +55,19 @@ nave a:hover{
     transition: transform 0.3;
 }
 
+.caixa-grafico__texto{
+    font-size: 1.5rem;
+    background-color: var(--vermelho);
+    padding: 2rem;
+    border-radius: 15px;
+    border: var(--preto);
+}
+span{
+    font-family: var(--laranja);
+    color: var(--azul);
+    font-size: 30px;
+}
+
 footer{
     display: flex;
     align-items: center;
