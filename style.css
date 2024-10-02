@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Gowun+Batang:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -6,33 +6,32 @@
 }
 
 :root {
-    --roxo: #5f0f40ff;
-    --vermelho: rgb(88, 9, 23);
-    --amarelo: rgb(251, 219, 36);
-    --laranja: #e36414ff;
-    --azul: rgb(34, 126, 149);
-    --preto: rgb(0, 0, 0);
-    --fonte-titulo: "New Amsterdam", sans-serif;
-    --fonte-texto: "Roboto Slab", serif;
+    --amarelo: #ffeb3b; 
+    --verde-escuro: #295e00; 
+    --verde-medio: #4b634e; 
+    --branco: #ffffff;
+    --branco-prata: #c0c0c0ff;
+    --fonte-titulo: "Montserrat", sans-serif;;
+    --fonte-texto: "Roboto", sans-serif;
 }
 
 body {
-    background-color: var(--azul);
+    background-color: var(--verde-escuro);
     font-family: var(--fonte-texto);
-    color: var(--preto);
-    height: 100vh; 
+    color: var(--branco);
+    height: 100vh;
 }
 
 header {
-    background-color: var(--amarelo);
+    background-color: var(--verde-medio);
     text-align: center;
 }
 
 h1 {
     font-family: var(--fonte-titulo);
-    font-size: 3rem;
-    color: var(--roxo);
-    padding: 1.5rem 0;
+    font-size: 3em;
+    color: var(--amarelo);
+    padding: 0.5em 0;
 }
 
 nav {
@@ -43,39 +42,46 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--vermelho);
-    font-size: 2rem;
-    margin: 0 2rem 1rem 0;
+    color: var(--branco);
+    font-size: 2em;
+    margin: 0 1em 0.5em 0;
 }
 
-nave a:hover{
+nav a:hover {
     text-decoration: underline;
-    color: var(--vermelho);
+    color: var(--amarelo);
     transform: scale(0.9);
-    transition: transform 0.3;
+    transition: transform 0.2s;
 }
 
-.caixa-grafico__texto{
-    font-size: 1.5rem;
-    background-color: var(--vermelho);
-    padding: 2rem;
-    border-radius: 15px;
-    border: var(--preto);
-}
-span{
-    font-family: var(--laranja);
-    color: var(--azul);
-    font-size: 30px;
+.caixa-grafico {
+    margin: 5rem;
+    font-size: 1.5em;
+    background-color: var(--amarelo);
+    padding: 1em;
+    border-radius: 20px;
+    border: var(--branco-prata) double 10px;
 }
 
-footer{
+.caixa-grafico__texto {
+    font-size: 1.5em;
+    padding: 2em 0 2.5em 0;
+}
+
+span {
+    font-family: var(--fonte-titulo);
+    color: var(--verde-medio);
+    font-size: 1.1em;
+}
+
+footer {
     display: flex;
     align-items: center;
-    justify-self: center;
-    background-color: var(--roxo);
-    color: var(--laranja);
+    justify-content: center;
+    background-color: var(--verde-medio);
+    color: var(--branco);
     width: 100%;
-    height: 3rem;
-    margin-top: 2rem;
-    font-size: 1,8rem;
+    height: 2em;
+    margin-top: 2em;
+    font-size: 1.5em;
 }
