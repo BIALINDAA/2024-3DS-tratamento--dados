@@ -6,7 +6,7 @@ async function visualizarInfos() {
         if (!res.ok) throw new Error('Erro ao buscar os dados');
 
         const dados = await res.json();
-        const comidaMaisConsumida = dados[0].comida; // Ajuste o campo para refletir o JSON correto
+        const comidaMaisConsumida = dados[0].comida; 
         const numeroVotos = dados[0].votos;
         const comentario = dados[0].comentario;
 

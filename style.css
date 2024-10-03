@@ -3,34 +3,38 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 :root {
-    --amarelo: #ffeb3b; 
-    --verde-escuro: #295e00; 
-    --verde-medio: #4b634e; 
+    --laranja: #eaa174; 
+    --vermelho: #ae1a00; 
+    --azul: #0473e9; 
     --branco: #ffffff;
-    --branco-prata: #c0c0c0ff;
-    --fonte-titulo: "Montserrat", sans-serif;;
+    --branco-prata: #c0c0c0;
+    --preto: rgb(0, 0, 0);
+    --fonte-titulo: "Montserrat", sans-serif;
     --fonte-texto: "Roboto", sans-serif;
 }
 
 body {
-    background-color: var(--verde-escuro);
+    background-color: var(--vermelho);
     font-family: var(--fonte-texto);
     color: var(--branco);
     height: 100vh;
+    display: flex; 
+    flex-direction: column;
 }
 
 header {
-    background-color: var(--verde-medio);
+    background-color: var(--azul);
     text-align: center;
 }
 
 h1 {
     font-family: var(--fonte-titulo);
     font-size: 3em;
-    color: var(--amarelo);
+    color: var(--preto);
     padding: 0.5em 0;
 }
 
@@ -49,7 +53,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: var(--amarelo);
+    color: var(--laranja);
     transform: scale(0.9);
     transition: transform 0.2s;
 }
@@ -57,10 +61,10 @@ nav a:hover {
 .caixa-grafico {
     margin: 5rem;
     font-size: 1.5em;
-    background-color: var(--amarelo);
+    background-color: var(--laranja);
     padding: 1em;
     border-radius: 20px;
-    border: var(--branco-prata) double 10px;
+    border: 10px double var(--preto); 
 }
 
 .caixa-grafico__texto {
@@ -70,7 +74,7 @@ nav a:hover {
 
 span {
     font-family: var(--fonte-titulo);
-    color: var(--verde-medio);
+    color: var(--preto);
     font-size: 1.1em;
 }
 
@@ -78,7 +82,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--verde-medio);
+    background-color: var(--azul);
     color: var(--branco);
     width: 100%;
     height: 2em;
