@@ -1,4 +1,4 @@
-const url = 'https://raw.githubusercontent.com/BIALINDAA/2024-API-ex/refs/heads/main/grafico.json'; 
+const url = 'https://raw.githubusercontent.com/BIALINDAA/2024-API-ex/refs/heads/main/grafico0.json'; 
 
 async function vizualizarInformacoes() {
     const res = await fetch(url);
