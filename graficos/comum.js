@@ -1,9 +1,10 @@
-function pegarCSS(variavel){
+function pegarCss(variavel){
     return getComputedStyle(document.body).getPropertyValue(variavel)
 }
 
 const configuraEixo = {
-    color: pegarCSS('--bra')
+    color: pegarCss('--violeta'),
+    size: 16,
+    family: pegarCss('--fonte-texto')
 }
-
-export{pegarCSS}
+export{pegarCss, configuraEixo}
